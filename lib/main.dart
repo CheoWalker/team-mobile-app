@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.green,
       ),
-      home: MyHomePage(title: 'Team Home Page'),
+      home: MyHomePage(),
       debugShowCheckedModeBanner: false,
     );
   }
