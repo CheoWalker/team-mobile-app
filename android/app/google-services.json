@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "340586199638",
+    "firebase_url": "https://my-football-team-2a1ee.firebaseio.com",
+    "project_id": "my-football-team-2a1ee",
+    "storage_bucket": "my-football-team-2a1ee.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:340586199638:android:89db474bd2ede925",
+        "android_client_info": {
+          "package_name": "app.Ilovethat.myfootballteam"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "340586199638-7n2mcgctf5h60mo9utbp1a7lfc94faar.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "app.Ilovethat.myfootballteam",
+            "certificate_hash": "64e332e60076366f1bbb3d1a4d9ab298e1d7eb65"
+          }
+        },
+        {
+          "client_id": "340586199638-2htn2rae6d6fbengre5rp7eq3cck4vnf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "app.Ilovethat.myfootballteam",
+            "certificate_hash": "4ca4965fccb4e3f8fb1cdc0a9f02fbdb39335cc7"
+          }
+        },
+        {
+          "client_id": "340586199638-m2v4qdbii1qnar3bqiijlftkcdv0pcgp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDY2Zx-DFnX26OJNys_9pUq6yD7c7snFKw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "340586199638-m2v4qdbii1qnar3bqiijlftkcdv0pcgp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
