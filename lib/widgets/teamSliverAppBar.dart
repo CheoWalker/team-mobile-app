@@ -2,8 +2,12 @@ import 'package:flutter/material.dart';
 
 class TeamSliverAppBar extends SliverPersistentHeaderDelegate {
   final double expandedHeight;
+  final String pageTitle;
 
-  TeamSliverAppBar({@required this.expandedHeight});
+  TeamSliverAppBar({
+    @required this.expandedHeight,
+    @required this.pageTitle,
+  });
   @override
   Widget build(
       BuildContext context, double shrinkOffset, bool overlapsContent) {
@@ -24,7 +28,7 @@ class TeamSliverAppBar extends SliverPersistentHeaderDelegate {
               color: Color(0xFF203731),
               child: Center(
                 child: Text(
-                  "MySliverAppBar",
+                  pageTitle,
                   style: TextStyle(
                     color: Colors.white,
                     fontWeight: FontWeight.w700,

@@ -18,7 +18,10 @@ class _MyHomePageState extends State<MyHomePage> {
         child: CustomScrollView(
           slivers: [
             SliverPersistentHeader(
-              delegate: TeamSliverAppBar(expandedHeight: 150),
+              delegate: TeamSliverAppBar(
+                expandedHeight: 150,
+                pageTitle: 'Home Page',
+              ),
               pinned: true,
             ),
             SliverToBoxAdapter(
