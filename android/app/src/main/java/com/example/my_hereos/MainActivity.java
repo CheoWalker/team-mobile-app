@@ -1,4 +1,4 @@
-package com.example.my_hereos;
+package app.Ilovethat.myfootballteam;
 
 import android.os.Bundle;
 import io.flutter.app.FlutterActivity;
