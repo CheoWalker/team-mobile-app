@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_hereos/widgets/teamBottomAppbar.dart';
 import '../widgets/teamSliverAppBar.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -75,6 +76,7 @@ class _MyHomePageState extends State<MyHomePage> {
           ],
         ),
       ),
+      bottomNavigationBar: TeamBottomAppbar(),
     );
   }
 }

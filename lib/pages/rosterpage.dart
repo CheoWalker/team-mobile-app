@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_hereos/widgets/teamBottomAppbar.dart';
 import '../widgets/teamSliverAppBar.dart';
 
 class TeamPage extends StatefulWidget {
@@ -15,18 +16,67 @@ class _TeamPageState extends State<TeamPage> {
           slivers: [
             SliverPersistentHeader(
               delegate: TeamSliverAppBar(
-                  expandedHeight: 150, pageTitle: 'Team Roster'),
+                expandedHeight: 150,
+                pageTitle: 'Home Page',
+              ),
               pinned: true,
             ),
             SliverToBoxAdapter(
-              child: DataTable(
-                columns: [],
-                rows: [],
+              child: SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: DataTable(
+                  columns: [
+                    DataColumn(label: Text('Name')),
+                    DataColumn(label: Text('Age')),
+                    DataColumn(label: Text('Occuptation')),
+                    DataColumn(label: Text('Email')),
+                  ],
+                  rows: [
+                    DataRow(
+                      cells: [
+                        DataCell(
+                          Text('Cheo Walker'),
+                        ),
+                        DataCell(
+                          Text('45'),
+                        ),
+                        DataCell(
+                          Text('Sr Web Administrator'),
+                        ),
+                        DataCell(
+                          Text('cwalker@dzwebcreations.com'),
+                        ),
+                      ],
+                    ),
+                    DataRow(
+                      cells: [
+                        DataCell(
+                          Text('Pamela Bey'),
+                        ),
+                        DataCell(
+                          Text('44'),
+                        ),
+                        DataCell(
+                          Text('Sr Web Administrator'),
+                        ),
+                        DataCell(
+                          Text('pamela@bebrilliantmedia.com'),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            SliverToBoxAdapter(
+              child: Container(
+                height: 500,
               ),
             )
           ],
         ),
       ),
+      bottomNavigationBar: TeamBottomAppbar(),
     );
   }
 }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_hereos/widgets/teamBottomAppbar.dart';
 import '../widgets/teamSliverAppBar.dart';
 
 class StandingPage extends StatefulWidget {
@@ -44,6 +45,7 @@ class _StandingPageState extends State<StandingPage> {
           ],
         ),
       ),
+      bottomNavigationBar: TeamBottomAppbar(),
     );
   }
 }

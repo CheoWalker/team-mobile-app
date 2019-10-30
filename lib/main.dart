@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
+import './pages/rosterpage.dart';
+import './pages/standingpage.dart';
 import './pages/homepage.dart';
 
 void main() {
@@ -19,6 +21,11 @@ class MyApp extends StatelessWidget {
       ),
       home: MyHomePage(),
       debugShowCheckedModeBanner: false,
+      initialRoute: '/',
+      routes: {
+        '/roster': (context) => TeamPage(),
+        '/standing': (context) => StandingPage(),
+      },
     );
   }
 }
