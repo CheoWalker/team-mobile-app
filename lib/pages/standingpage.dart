@@ -3,6 +3,7 @@ import 'package:my_hereos/widgets/teamBottomAppbar.dart';
 import '../widgets/teamSliverAppBar.dart';
 
 class StandingPage extends StatefulWidget {
+  static const routeName = '/standing';
   @override
   _StandingPageState createState() => _StandingPageState();
 }

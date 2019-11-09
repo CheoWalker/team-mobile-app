@@ -3,6 +3,7 @@ import 'package:my_hereos/widgets/teamBottomAppbar.dart';
 import '../widgets/teamSliverAppBar.dart';
 
 class TeamPage extends StatefulWidget {
+  static const routeName = '/roster';
   @override
   _TeamPageState createState() => _TeamPageState();
 }

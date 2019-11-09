@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+import '../pages/standingpage.dart';
+import '../pages/rosterpage.dart';
+
 class TeamBottomAppbar extends StatefulWidget {
   @override
   _TeamBottomAppbarState createState() => _TeamBottomAppbarState();
@@ -15,7 +18,7 @@ class _TeamBottomAppbarState extends State<TeamBottomAppbar> {
             child: IconButton(
               icon: Icon(Icons.home),
               onPressed: () {
-                Navigator.pushNamed(context, '/');
+                Navigator.pushReplacementNamed(context, '/');
               },
             ),
           ),
@@ -23,7 +26,7 @@ class _TeamBottomAppbarState extends State<TeamBottomAppbar> {
             child: IconButton(
               icon: Icon(Icons.people),
               onPressed: () {
-                Navigator.pushNamed(context, '/roster');
+                Navigator.pushReplacementNamed(context, TeamPage.routeName);
               },
             ),
           ),
@@ -31,7 +34,7 @@ class _TeamBottomAppbarState extends State<TeamBottomAppbar> {
             child: IconButton(
               icon: Icon(Icons.dashboard),
               onPressed: () {
-                Navigator.pushNamed(context, '/standing');
+                Navigator.pushReplacementNamed(context, StandingPage.routeName);
               },
             ),
           ),

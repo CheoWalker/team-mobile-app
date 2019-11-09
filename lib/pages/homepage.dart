@@ -22,57 +22,66 @@ class _MyHomePageState extends State<MyHomePage> {
               pinned: true,
             ),
             SliverToBoxAdapter(
-              child: SingleChildScrollView(
-                scrollDirection: Axis.horizontal,
-                child: DataTable(
-                  columns: [
-                    DataColumn(label: Text('Name')),
-                    DataColumn(label: Text('Age')),
-                    DataColumn(label: Text('Occuptation')),
-                    DataColumn(label: Text('Email')),
-                  ],
-                  rows: [
-                    DataRow(
-                      cells: [
-                        DataCell(
-                          Text('Cheo Walker'),
+              child: Card(
+                elevation: 4,
+                child: InkWell(
+                  splashColor: ThemeData().primaryColor,
+                  onTap: () {},
+                  child: Column(
+                    children: <Widget>[
+                      Stack(children: [
+                        Container(
+                          height: 200,
+                          width: double.infinity,
+                          child: Image.network(
+                            'https://static.clubs.nfl.com/image/private/t_editorial_landscape_8_desktop_mobile/f_auto/packers/ojie1h2gxgqs6f1scdnq.jpg',
+                            fit: BoxFit.cover,
+                          ),
                         ),
-                        DataCell(
-                          Text('45'),
-                        ),
-                        DataCell(
-                          Text('Sr Web Administrator'),
-                        ),
-                        DataCell(
-                          Text('cwalker@dzwebcreations.com'),
-                        ),
-                      ],
-                    ),
-                    DataRow(
-                      cells: [
-                        DataCell(
-                          Text('Pamela Bey'),
-                        ),
-                        DataCell(
-                          Text('44'),
-                        ),
-                        DataCell(
-                          Text('Sr Web Administrator'),
-                        ),
-                        DataCell(
-                          Text('pamela@bebrilliantmedia.com'),
-                        ),
-                      ],
-                    ),
-                  ],
+                      ]),
+                    ],
+                  ),
                 ),
               ),
             ),
+            SliverGrid(
+              gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                  crossAxisCount: 2,
+                  // mainAxisSpacing: 2,
+                  // crossAxisSpacing: 6,
+                  childAspectRatio: 1),
+              delegate:
+                  SliverChildBuilderDelegate((BuildContext context, int index) {
+                return Card(
+                  elevation: 4,
+                  child: Column(
+                    children: <Widget>[
+                      Container(
+                        height: 190,
+                        width: double.infinity,
+                        child: Image.network(
+                          'https://static.clubs.nfl.com/image/private/t_editorial_landscape_8_desktop_mobile/f_auto/packers/ojie1h2gxgqs6f1scdnq.jpg',
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                    ],
+                  ),
+                );
+              }, childCount: 8),
+            ),
             SliverToBoxAdapter(
-              child: Container(
-                height: 500,
+              child: SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: Center(
+                  child: Text('Test'),
+                ),
               ),
-            )
+            ),
+            // SliverToBoxAdapter(
+            //   child: Container(
+            //     height: 1500,
+            //   ),
+            // ),
           ],
         ),
       ),

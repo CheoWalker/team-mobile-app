@@ -23,8 +23,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       initialRoute: '/',
       routes: {
-        '/roster': (context) => TeamPage(),
-        '/standing': (context) => StandingPage(),
+        TeamPage.routeName: (context) => TeamPage(),
+        StandingPage.routeName: (context) => StandingPage(),
       },
     );
   }
